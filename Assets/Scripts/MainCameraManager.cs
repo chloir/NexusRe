@@ -35,6 +35,10 @@ public class MainCameraManager : MonoBehaviour
         }
         
         _cameraTransform.LookAt(_playerTransform);
-        _cameraTransform.position = Vector3.Lerp(_cameraTransform.position, _cameraTargetPosition, 0.4f);
+        
+        Vector3 diff = Vector3.ClampMagnitude(
+            (_cameraTargetPosition - _cameraTransform.position) * 0.4f, 0.15f);
+        
+        _cameraTransform.position += diff;
     }
 }
