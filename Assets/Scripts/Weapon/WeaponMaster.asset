@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ffc4ebf89a47b4a972c96a7fe260f3, type: 3}
+  m_Name: WeaponMaster
+  m_EditorClassIdentifier: 
+  WeaponDetailList:
+  - WeaponId: 0
+    WeaponName: Machinegun
+    FireInterval: 0.1
+    Damage: 10
+    Ammunation: 100
+  - WeaponId: 1
+    WeaponName: Shotgun
+    FireInterval: 1
+    Damage: 100
+    Ammunation: 10
+  - WeaponId: 2
+    WeaponName: Lasergun
+    FireInterval: 1.5
+    Damage: 100
+    Ammunation: 10
