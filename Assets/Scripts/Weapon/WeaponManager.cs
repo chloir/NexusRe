@@ -5,14 +5,7 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    public enum WeaponCategory
-    {
-        Machinegun,
-        Shotgun,
-        Lasergun,
-        None
-    }
-
+    public WeaponData weaponMaster;
     private static WeaponManager _instance;
 
     private void Awake()
@@ -25,4 +18,6 @@ public class WeaponManager : MonoBehaviour
     }
 
     public static WeaponManager GetInstance() => _instance;
+
+    public WeaponDetail GetWeaponData(int id) => weaponMaster.WeaponDetailList[id];
 }
