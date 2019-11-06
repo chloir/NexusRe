@@ -13,18 +13,27 @@ MonoBehaviour:
   m_Name: WeaponMaster
   m_EditorClassIdentifier: 
   WeaponDetailList:
-  - WeaponId: 0
-    WeaponName: Machinegun
-    FireInterval: 0.1
-    Damage: 10
-    Ammunation: 100
-  - WeaponId: 1
-    WeaponName: Shotgun
-    FireInterval: 1
-    Damage: 100
-    Ammunation: 10
-  - WeaponId: 2
-    WeaponName: Lasergun
-    FireInterval: 1.5
-    Damage: 100
-    Ammunation: 10
+  - weaponId: 0
+    weaponName: Machinegun
+    fireInterval: 0.1
+    bulletVelocity: 100
+    bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
+      type: 3}
+    damage: 10
+    ammo: 200
+  - weaponId: 1
+    weaponName: Shotgun
+    fireInterval: 1
+    bulletVelocity: 80
+    bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
+      type: 3}
+    damage: 10
+    ammo: 50
+  - weaponId: 2
+    weaponName: Lasergun
+    fireInterval: 3
+    bulletVelocity: 500
+    bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
+      type: 3}
+    damage: 200
+    ammo: 10

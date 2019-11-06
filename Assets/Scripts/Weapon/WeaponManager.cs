@@ -10,10 +10,6 @@ public class WeaponManager : MonoBehaviour
 
     private void Awake()
     {
-        if (WeaponManager.GetInstance() != null)
-        {
-            Destroy(this);
-        }
         _instance = this;
     }
 

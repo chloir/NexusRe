@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Object = UnityEngine.Object;
 
-public class Weapon : MonoBehaviour
+public class Weapon
 {
     private WeaponDetail _weaponData;
     private float _timer;
     private bool _canFire;
     private Transform _playerTransform;
     
-    Weapon(WeaponDetail data)
+    public Weapon(WeaponDetail data)
     {
         _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
         _weaponData = data;
@@ -18,7 +16,7 @@ public class Weapon : MonoBehaviour
         _canFire = true;
     }
 
-    private void Update()
+    public void WeaponTimerUpdate()
     {
         _timer += Time.deltaTime;
         if (_timer > _weaponData.fireInterval)
@@ -33,9 +31,11 @@ public class Weapon : MonoBehaviour
         {
             _timer = 0;
             _canFire = false;
-            Instantiate(_weaponData.bulletPrefab)
+            Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.forward, Quaternion.identity)
                 .GetComponent<Rigidbody>()
                 .AddForce(_playerTransform.forward * _weaponData.bulletVelocity, ForceMode.Impulse);
         }
     }
+    
+    public void ShowWeaponName(){ Debug.Log(_weaponData.weaponName); }
 }
