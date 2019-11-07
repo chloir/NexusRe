@@ -10,5 +10,6 @@ public class PartsData
     public string PartsName;
     public int PartsCategory;
     public float MovementVelocity;
+    public int ArmorPoint;
     public float EnergyProduction;
 }

@@ -4,16 +4,19 @@ using Object = UnityEngine.Object;
 public class Weapon
 {
     private WeaponDetail _weaponData;
+
+    private int _ammo;
     private float _timer;
     private bool _canFire;
     private Transform _playerTransform;
-    
+
     public Weapon(WeaponDetail data)
     {
         _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
         _weaponData = data;
         _timer = 0;
         _canFire = true;
+        _ammo = _weaponData.ammo;
     }
 
     public void WeaponTimerUpdate()
@@ -29,13 +32,19 @@ public class Weapon
     {
         if (_canFire)
         {
+            var forwardVector = _playerTransform.forward;
             _timer = 0;
             _canFire = false;
-            Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.forward, Quaternion.identity)
+            Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.position + forwardVector, Quaternion.identity)
                 .GetComponent<Rigidbody>()
-                .AddForce(_playerTransform.forward * _weaponData.bulletVelocity, ForceMode.Impulse);
+                .AddForce(forwardVector * _weaponData.bulletVelocity, ForceMode.Impulse);
+            _ammo -= 1;
         }
     }
-    
+
+    public int CurrentAmmo => _ammo;
+    public int MaxAmmo => _weaponData.ammo;
+    public string WeaponName => _weaponData.weaponName;
+
     public void ShowWeaponName(){ Debug.Log(_weaponData.weaponName); }
 }

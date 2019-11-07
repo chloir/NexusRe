@@ -3,5 +3,6 @@
     "PartsName":"Test01",
     "PartsCategory":0,
     "MovementVelocity":1.0,
+    "ArmorPoint":2000,
     "EnergyProduction":1.0
 }

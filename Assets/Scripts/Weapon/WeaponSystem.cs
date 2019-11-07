@@ -10,8 +10,11 @@ public class WeaponSystem : MonoBehaviour
     private WeaponManager _weaponManager;
     private Weapon _current;
 
+    private UiManager _uiManager;
+
     private void Start()
     {
+        _uiManager = UiManager.GetInstance();
         _weaponManager = WeaponManager.GetInstance();
 
         _primary = new Weapon(_weaponManager.GetWeaponData(primaryWeaponId));
@@ -21,6 +24,8 @@ public class WeaponSystem : MonoBehaviour
         _secondary.ShowWeaponName();
         
         _current = _primary;
+        _uiManager.SetWeaponName(_current.WeaponName);
+        _uiManager.UpdateAmmoDisplay(_current.CurrentAmmo, _current.MaxAmmo);
     }
 
     private void Update()
@@ -30,6 +35,7 @@ public class WeaponSystem : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             _current.Fire();
+            _uiManager.UpdateAmmoDisplay(_current.CurrentAmmo, _current.MaxAmmo);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -42,6 +48,9 @@ public class WeaponSystem : MonoBehaviour
             {
                 _current = _primary;
             }
+            
+            _uiManager.SetWeaponName(_current.WeaponName);
+            _uiManager.UpdateAmmoDisplay(_current.CurrentAmmo, _current.MaxAmmo);
             
             _current.ShowWeaponName();
         }
