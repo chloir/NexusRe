@@ -19,7 +19,7 @@ MonoBehaviour:
     bulletVelocity: 100
     bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
       type: 3}
-    damage: 10
+    damage: 100
     ammo: 200
   - weaponId: 1
     weaponName: Shotgun
@@ -28,12 +28,12 @@ MonoBehaviour:
     bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
       type: 3}
     damage: 10
-    ammo: 50
+    ammo: 500
   - weaponId: 2
     weaponName: Lasergun
     fireInterval: 3
-    bulletVelocity: 500
+    bulletVelocity: 200
     bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
       type: 3}
-    damage: 200
+    damage: 1000
     ammo: 10

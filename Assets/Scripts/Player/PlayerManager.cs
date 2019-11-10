@@ -15,6 +15,8 @@ public class PlayerManager : MonoBehaviour
     {
         _playerTransform = this.transform;
         _rigidbody = GetComponent<Rigidbody>();
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()

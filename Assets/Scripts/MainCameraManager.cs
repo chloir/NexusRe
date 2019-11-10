@@ -35,9 +35,8 @@ public class MainCameraManager : MonoBehaviour
         }
         
         _cameraTransform.LookAt(_playerTransform);
-        
-        Vector3 diff = Vector3.ClampMagnitude(
-            (_cameraTargetPosition - _cameraTransform.position) * 0.4f, 0.15f);
+
+        Vector3 diff = (_cameraTargetPosition - _cameraTransform.position) * 0.6f;
         
         _cameraTransform.position += diff;
     }

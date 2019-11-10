@@ -11,15 +11,32 @@ public class UiManager : MonoBehaviour
     [SerializeField] private Text armorPointText;
     [SerializeField] private Text currentWeaponDisplay;
     [SerializeField] private Image barriarGauge;
+    [SerializeField] private Image reticle;
+
+    private Camera _mainCamera;
     
     private int _currentAmmo, _maxAmmo;
     private string _currentWeaponName;
+
+    private Transform _playerTransform;
 
     private static UiManager _instance;
 
     private void Awake()
     {
         _instance = this;
+    }
+
+    private void Start()
+    {
+        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        _mainCamera = Camera.main;
+    }
+
+    private void Update()
+    {
+        reticle.transform.position = _mainCamera.WorldToScreenPoint(
+            _playerTransform.position);
     }
 
     public void UpdateAmmoDisplay(int current, int max)

@@ -1,32 +1,31 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AcManager : MonoBehaviour
 {
-    private UiManager _uiManager;
-    private int _armorPoint = 25000;
+    [SerializeField] private int testArmorPoint;
+    private int _armorPoint;
 
-    private int _prevArmorPoint;
-    
-    void Start()
+    private void Start()
     {
-        _uiManager = UiManager.GetInstance();
-        _prevArmorPoint = _armorPoint;
+        _armorPoint = testArmorPoint;
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (_armorPoint <= 0)
         {
-            _armorPoint -= 200;
+            Destroy(this.gameObject);
         }
-        
-        if (_armorPoint != _prevArmorPoint)
-        {
-            _uiManager.UpdateArmorPoint(_armorPoint);
-        }
+    }
 
-        _prevArmorPoint = _armorPoint;
+    public int GetArmorPoint() => _armorPoint;
+    
+    public void Damage(int value)
+    {
+        _armorPoint -= value;
+        Debug.Log("Hit");
     }
 }

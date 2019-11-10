@@ -37,10 +37,10 @@ public class Weapon
                 var forwardVector = _playerTransform.forward;
                 _timer = 0;
                 _canFire = false;
-                Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.position + forwardVector,
-                        Quaternion.identity)
-                    .GetComponent<Rigidbody>()
-                    .AddForce(forwardVector * _weaponData.bulletVelocity, ForceMode.Impulse);
+                var obj = Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.position + forwardVector,
+                        Quaternion.identity);
+                obj.GetComponent<Rigidbody>().AddForce(forwardVector * _weaponData.bulletVelocity, ForceMode.Impulse);
+                obj.GetComponent<Bullet>().SetDamage(_weaponData.damage);
                 _ammo -= 1;
             }
         }
