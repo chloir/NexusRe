@@ -4,17 +4,10 @@
     <list default="true" id="39268522-163f-40f8-87a1-7bbc6b36d128" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EffectTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EffectTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponMaster.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponMaster.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,23 +20,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerEffectManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfoManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainCameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerEffectManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfoManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/MachineData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" />
@@ -52,12 +46,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEffectManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/IDamageable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfoManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" />
+        <option value="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" />
+        <option value="$PROJECT_DIR$/Assets/DataResources/AssembleTemplate.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" />
       </list>
     </option>
   </component>
@@ -68,7 +66,11 @@
     <option name="height" value="775" />
   </component>
   <component name="ProjectId" id="1TFFLkbYwlWZ1HcBydFuJcyjs8I" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />

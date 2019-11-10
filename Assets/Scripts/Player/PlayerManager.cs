@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class PlayerManager : MonoBehaviour
     private float _rotationSensitivity = 2f;
     private float _jumpVelocity = 0.5f;
     private float _boostVelocity = 1f;
+
+    private float _gravitation = -9.8f;
 
     private Transform _playerTransform;
     private Rigidbody _rigidbody;
@@ -22,7 +25,6 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         var currentPosition = _playerTransform.position;
-        var movementY = currentPosition.y;
 
         var horizontalInput = Input.GetAxis("Horizontal");
         var verticalInput = Input.GetAxis("Vertical");
@@ -46,14 +48,23 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            _rigidbody.AddForce(0, _boostVelocity, 0, ForceMode.VelocityChange);
+            _rigidbody.AddForce(0, _boostVelocity, 0, ForceMode.Force);
         }
+
+        //_movementTarget.y += _gravitation * Time.deltaTime;
 
         var mouseX = Input.GetAxis("Mouse X") * _rotationSensitivity;
         var mouseY = Input.GetAxis("Mouse Y") * _rotationSensitivity * -1;
         
         _playerTransform.Rotate(mouseY, mouseX, 0);
-        
+        // なぜかZ回転するから応急処置
+        var euler = _playerTransform.localEulerAngles;
+        euler.z = 0;
+        _playerTransform.localEulerAngles = euler;
+    }
+
+    private void FixedUpdate()
+    {
         _playerTransform.position = Vector3.Lerp(_playerTransform.position, _movementTarget, 0.4f);
     }
 }

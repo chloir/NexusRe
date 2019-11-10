@@ -8,6 +8,7 @@
           <e p="AC" t="Include">
             <e p="AcManager.cs" t="Include" />
             <e p="AssembleData.cs" t="Include" />
+            <e p="AssembleManager.cs" t="Include" />
             <e p="PartsData.cs" t="Include" />
           </e>
           <e p="Experiment" t="Include">

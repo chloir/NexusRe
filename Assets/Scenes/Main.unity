@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 160688376}
   - component: {fileID: 160688375}
   - component: {fileID: 160688377}
+  - component: {fileID: 160688378}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -181,6 +182,19 @@ MonoBehaviour:
   currentWeaponDisplay: {fileID: 1625340631}
   barriarGauge: {fileID: 249711527}
   reticle: {fileID: 1968473130}
+--- !u!114 &160688378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160688374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e033adf97b6034282bc1c8a5cdfec45a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assembleJson: {fileID: 4900000, guid: 7de3ccad7b20c4614a6206d7c05f5eab, type: 3}
 --- !u!1 &249711525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679276936214091758, guid: 2a3b0df93c2494e789b1a008c4581f59,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9026752727356729093, guid: 2a3b0df93c2494e789b1a008c4581f59,
         type: 3}
