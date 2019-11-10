@@ -30,15 +30,19 @@ public class Weapon
 
     public void Fire()
     {
-        if (_canFire)
+        if (_ammo > 0)
         {
-            var forwardVector = _playerTransform.forward;
-            _timer = 0;
-            _canFire = false;
-            Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.position + forwardVector, Quaternion.identity)
-                .GetComponent<Rigidbody>()
-                .AddForce(forwardVector * _weaponData.bulletVelocity, ForceMode.Impulse);
-            _ammo -= 1;
+            if (_canFire)
+            {
+                var forwardVector = _playerTransform.forward;
+                _timer = 0;
+                _canFire = false;
+                Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.position + forwardVector,
+                        Quaternion.identity)
+                    .GetComponent<Rigidbody>()
+                    .AddForce(forwardVector * _weaponData.bulletVelocity, ForceMode.Impulse);
+                _ammo -= 1;
+            }
         }
     }
 

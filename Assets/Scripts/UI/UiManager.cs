@@ -35,5 +35,7 @@ public class UiManager : MonoBehaviour
         currentWeaponDisplay.text = $"{_currentWeaponName} : {_currentAmmo:0000} / {_maxAmmo:0000}";
     }
 
+    public void UpdateArmorPoint(int value) => armorPointText.text = $"AP {value:00000}";
+
     public static UiManager GetInstance() => _instance;
 }

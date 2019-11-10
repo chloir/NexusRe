@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AC" t="Include">
+            <e p="AcManager.cs" t="Include" />
             <e p="AssembleData.cs" t="Include" />
             <e p="PartsData.cs" t="Include" />
           </e>
@@ -14,6 +15,7 @@
           </e>
           <e p="MainCameraManager.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="PlayerEffectManager.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
