@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    private float _movementVelocity = 0.1f;
+    private float _movementVelocity;
     private float _rotationSensitivity = 2f;
     private float _jumpVelocity = 0.5f;
     private float _boostVelocity = 1f;
 
-    private float _gravitation = -9.8f;
-
+    private AcManager _playerAcManager;
+    private AssembleManager _assembleManager;
+    
     private Transform _playerTransform;
     private Rigidbody _rigidbody;
     private Vector3 _movementTarget = Vector3.zero;
@@ -18,6 +19,11 @@ public class PlayerManager : MonoBehaviour
     {
         _playerTransform = this.transform;
         _rigidbody = GetComponent<Rigidbody>();
+        _assembleManager = AssembleManager.GetInstance();
+        _playerAcManager = GetComponent<AcManager>();
+
+        _playerAcManager.SetArmorPoint(_assembleManager.GetAssembledArmorPoint());
+        _movementVelocity = _assembleManager.GetAssembledMovementVelocity();
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -61,10 +67,7 @@ public class PlayerManager : MonoBehaviour
         var euler = _playerTransform.localEulerAngles;
         euler.z = 0;
         _playerTransform.localEulerAngles = euler;
-    }
-
-    private void FixedUpdate()
-    {
+        
         _playerTransform.position = Vector3.Lerp(_playerTransform.position, _movementTarget, 0.4f);
     }
 }

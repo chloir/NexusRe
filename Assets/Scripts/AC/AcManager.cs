@@ -8,7 +8,7 @@ public class AcManager : MonoBehaviour
     [SerializeField] private int testArmorPoint;
     private int _armorPoint;
 
-    private void Start()
+    private void Awake()
     {
         _armorPoint = testArmorPoint;
     }
@@ -20,6 +20,8 @@ public class AcManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    public void SetArmorPoint(int value) => _armorPoint = value;
 
     public int GetArmorPoint() => _armorPoint;
     

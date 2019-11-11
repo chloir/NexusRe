@@ -4770,6 +4770,7 @@ GameObject:
   - component: {fileID: 8679276936214091753}
   - component: {fileID: 8351239020643864022}
   - component: {fileID: 9026752727356729093}
+  - component: {fileID: 8616626151059754065}
   m_Layer: 2
   m_Name: Standard
   m_TagString: Player
@@ -4892,8 +4893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc512643a9d864a15bd9260a1a97d428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primaryWeaponId: 0
-  secondaryWeaponId: 2
 --- !u!114 &8351239020643864022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4920,6 +4919,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testArmorPoint: 0
+--- !u!114 &8616626151059754065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8679276936214091744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e59449031634470e9c4a27fb08842b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8679276937744706251
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,3 +13,8 @@ public class PartsData
     public int ArmorPoint;
     public float EnergyProduction;
 }
+
+public class PartsDataArray
+{
+    public PartsData[] PartsDataList;
+}

@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39268522-163f-40f8-87a1-7bbc6b36d128" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Standard.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,22 +43,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/MachineData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" />
         <option value="$PROJECT_DIR$/Assets/DataResources/TestParts01.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEffectManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/IDamageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfoManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" />
-        <option value="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" />
         <option value="$PROJECT_DIR$/Assets/DataResources/AssembleTemplate.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" />
+        <option value="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
       </list>
     </option>
   </component>
