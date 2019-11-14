@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
 
     public void SetDamage(int value) => _damage = value;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         var acManager = other.gameObject.GetComponent<AcManager>();
         if (acManager != null)

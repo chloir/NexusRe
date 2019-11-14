@@ -28,9 +28,9 @@ MonoBehaviour:
     bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,
       type: 3}
     damage: 10
-    ammo: 500
+    ammo: 50
   - weaponId: 2
-    weaponName: Lasergun
+    weaponName: RailGun
     fireInterval: 3
     bulletVelocity: 200
     bulletPrefab: {fileID: 4735290293400130092, guid: fff527bd8a6414274aab6a26a4982ac5,

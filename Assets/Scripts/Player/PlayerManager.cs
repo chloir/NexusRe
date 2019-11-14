@@ -1,12 +1,14 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] private GameObject aimTarget;
+    
     private float _movementVelocity;
     private float _rotationSensitivity = 2f;
     private float _jumpVelocity = 0.5f;
     private float _boostVelocity = 1f;
+    private float _quickBoostVelocity = 4f;
 
     private AcManager _playerAcManager;
     private AssembleManager _assembleManager;
@@ -35,16 +37,19 @@ public class PlayerManager : MonoBehaviour
         var horizontalInput = Input.GetAxis("Horizontal");
         var verticalInput = Input.GetAxis("Vertical");
 
+        var horizontalVelocity = _movementVelocity * Mathf.Sign(horizontalInput);
+        var verticalVelocity = _movementVelocity * Mathf.Sign(verticalInput);
+
         if (horizontalInput < 0 || horizontalInput > 0)
         {
-            _movementTarget += _playerTransform.right * (_movementVelocity * Mathf.Sign(horizontalInput));
+            _movementTarget += _playerTransform.right * horizontalVelocity;
         }
 
         if (verticalInput < 0 || verticalInput > 0)
         {
-            _movementTarget += _playerTransform.forward * (_movementVelocity * Mathf.Sign(verticalInput));
+            _movementTarget += _playerTransform.forward * verticalVelocity;
         }
-        
+
         _movementTarget.y = currentPosition.y;
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -57,8 +62,6 @@ public class PlayerManager : MonoBehaviour
             _rigidbody.AddForce(0, _boostVelocity, 0, ForceMode.Force);
         }
 
-        //_movementTarget.y += _gravitation * Time.deltaTime;
-
         var mouseX = Input.GetAxis("Mouse X") * _rotationSensitivity;
         var mouseY = Input.GetAxis("Mouse Y") * _rotationSensitivity * -1;
         
@@ -67,7 +70,9 @@ public class PlayerManager : MonoBehaviour
         var euler = _playerTransform.localEulerAngles;
         euler.z = 0;
         _playerTransform.localEulerAngles = euler;
-        
-        _playerTransform.position = Vector3.Lerp(_playerTransform.position, _movementTarget, 0.4f);
+
+        _playerTransform.position = Vector3.Lerp(currentPosition, _movementTarget, 0.4f);
     }
+
+    public GameObject GetAimTarget() => aimTarget;
 }

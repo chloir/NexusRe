@@ -18,8 +18,8 @@ public class WeaponSystem : MonoBehaviour
         
         var weaponId = _assembleManager.GetWeaponId();
 
-        _primary = new Weapon(_weaponManager.GetWeaponData(weaponId.primary));
-        _secondary = new Weapon(_weaponManager.GetWeaponData(weaponId.secondary));
+        _primary = new Weapon(_weaponManager.GetWeaponData(weaponId.primary), transform);
+        _secondary = new Weapon(_weaponManager.GetWeaponData(weaponId.secondary), transform);
         
         _primary.ShowWeaponName();
         _secondary.ShowWeaponName();
@@ -52,8 +52,10 @@ public class WeaponSystem : MonoBehaviour
             
             _uiManager.SetWeaponName(_current.WeaponName);
             _uiManager.UpdateAmmoDisplay(_current.CurrentAmmo, _current.MaxAmmo);
-            
+
             _current.ShowWeaponName();
         }
+        
+        _uiManager.UpdateFireIntervalUi(_current.FireIntervalRatio);
     }
 }

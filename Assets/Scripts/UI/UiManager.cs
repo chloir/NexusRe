@@ -12,11 +12,15 @@ public class UiManager : MonoBehaviour
     [SerializeField] private Text currentWeaponDisplay;
     [SerializeField] private Image barriarGauge;
     [SerializeField] private Image reticle;
+    [SerializeField] private Image ammoGauge;
+    [SerializeField] private Image intervalGauge;
 
     private Camera _mainCamera;
     
     private int _currentAmmo, _maxAmmo;
     private string _currentWeaponName;
+    private Vector2 _ammoGaugeRatio = Vector2.one;
+    private Vector2 _intervalGaugeRatio = Vector2.one;
 
     private Transform _playerTransform;
 
@@ -29,7 +33,7 @@ public class UiManager : MonoBehaviour
 
     private void Start()
     {
-        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        _playerTransform = GameObject.FindWithTag("Player").GetComponent<PlayerManager>().GetAimTarget().transform;
         _mainCamera = Camera.main;
     }
 
@@ -43,7 +47,18 @@ public class UiManager : MonoBehaviour
     {
         _currentAmmo = current;
         _maxAmmo = max;
+
+        float currentAmmoRatio = (float)current / (float)max;
+        _ammoGaugeRatio.x = currentAmmoRatio;
+        
         currentWeaponDisplay.text = $"{_currentWeaponName} : {_currentAmmo:0000} / {_maxAmmo:0000}";
+        ammoGauge.transform.localScale = _ammoGaugeRatio;
+    }
+
+    public void UpdateFireIntervalUi(float scale)
+    {
+        _intervalGaugeRatio.x = scale;
+        intervalGauge.transform.localScale = _intervalGaugeRatio;
     }
 
     public void SetWeaponName(string weaponName)

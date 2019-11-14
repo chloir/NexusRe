@@ -8,13 +8,13 @@ public class Weapon
     private int _ammo;
     private float _timer;
     private bool _canFire;
-    private Transform _playerTransform;
+    private Transform _transform;
 
-    public Weapon(WeaponDetail data)
+    public Weapon(WeaponDetail data, Transform self)
     {
-        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        _transform = self;
         _weaponData = data;
-        _timer = 0;
+        _timer = _weaponData.fireInterval;
         _canFire = true;
         _ammo = _weaponData.ammo;
     }
@@ -34,10 +34,10 @@ public class Weapon
         {
             if (_canFire)
             {
-                var forwardVector = _playerTransform.forward;
+                var forwardVector = _transform.forward;
                 _timer = 0;
                 _canFire = false;
-                var obj = Object.Instantiate(_weaponData.bulletPrefab, _playerTransform.position + forwardVector,
+                var obj = Object.Instantiate(_weaponData.bulletPrefab, _transform.position + forwardVector,
                         Quaternion.identity);
                 obj.GetComponent<Rigidbody>().AddForce(forwardVector * _weaponData.bulletVelocity, ForceMode.Impulse);
                 obj.GetComponent<Bullet>().SetDamage(_weaponData.damage);
@@ -49,6 +49,8 @@ public class Weapon
     public int CurrentAmmo => _ammo;
     public int MaxAmmo => _weaponData.ammo;
     public string WeaponName => _weaponData.weaponName;
+
+    public float FireIntervalRatio => Mathf.Clamp(_timer / _weaponData.fireInterval, 0, 1);
 
     public void ShowWeaponName(){ Debug.Log(_weaponData.weaponName); }
 }

@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39268522-163f-40f8-87a1-7bbc6b36d128" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HitEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HitEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Standard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EffectTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EffectTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAgent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAgent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Agent/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Agent/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Agent/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Agent/StateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyIdle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponMaster.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponMaster.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,26 +60,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/MachineData.cs" />
         <option value="$PROJECT_DIR$/Assets/DataResources/TestParts01.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEffectManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/IDamageable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCameraManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfoManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleData.cs" />
         <option value="$PROJECT_DIR$/Assets/DataResources/AssembleTemplate.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" />
         <option value="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStateManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Agent/StateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Agent/State.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Agent/StateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyIdle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
       </list>
     </option>
   </component>

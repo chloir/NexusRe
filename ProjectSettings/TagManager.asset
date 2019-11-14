@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - CameraTarget
+  - Enemy
   layers:
   - Default
   - TransparentFX
