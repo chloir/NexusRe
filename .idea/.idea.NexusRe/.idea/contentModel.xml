@@ -11,6 +11,9 @@
             <e p="AssembleManager.cs" t="Include" />
             <e p="PartsData.cs" t="Include" />
           </e>
+          <e p="Enemy" t="Include">
+            <e p="EnemyAgent.cs" t="Include" />
+          </e>
           <e p="Experiment" t="Include">
             <e p="CacheTest.cs" t="Include" />
           </e>

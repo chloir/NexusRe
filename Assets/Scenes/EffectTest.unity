@@ -288,6 +288,11 @@ PrefabInstance:
       propertyPath: InitialModule.randomizeRotationDirection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2470911360978707757, guid: 246cab968f6474fd6a55ae675548184a,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 246cab968f6474fd6a55ae675548184a, type: 3}
 --- !u!1 &1541900018
