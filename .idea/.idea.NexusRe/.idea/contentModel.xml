@@ -12,6 +12,7 @@
             <e p="AssembleData.cs" t="Include" />
             <e p="AssembleManager.cs" t="Include" />
             <e p="PartsData.cs" t="Include" />
+            <e p="PartsDataMaster.cs" t="Include" />
           </e>
           <e p="Agent" t="Include">
             <e p="State.cs" t="Include" />
@@ -31,6 +32,8 @@
             <e p="PlayerManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="PartsButtonController.cs" t="Include" />
+            <e p="PartsListManager.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />
           </e>
           <e p="Weapon" t="Include">
