@@ -39,6 +39,14 @@
       "MovementVelocity":0,
       "ArmorPoint":0,
       "EnergyProduction":2500
+    },
+    {
+      "PartsId":5,
+      "PartsName":"Leg002",
+      "PartsCategory":3,
+      "MovementVelocity":0.2,
+      "ArmorPoint":6000,
+      "EnergyProduction":-100
     }
   ]
 }

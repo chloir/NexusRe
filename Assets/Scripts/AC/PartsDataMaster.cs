@@ -36,5 +36,7 @@ public class PartsDataMaster : MonoBehaviour
         return data;
     }
 
+    public Dictionary<int, PartsData> GetMaster() => _partsDataDictionary;
+
     public static PartsDataMaster GetInstance() => _instance;
 }
