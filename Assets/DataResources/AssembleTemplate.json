@@ -1,9 +1,9 @@
 {
-    "headPartsId":0,
-    "bodyPartsId":1,
-    "armPartsId":2,
-    "legPartsId":3,
-    "generatorPartsId":4,
-    "primaryWeaponId":0,
-    "secondaryWeaponId":2
+    "headPartsId": 0,
+    "bodyPartsId": 1,
+    "armPartsId": 2,
+    "legPartsId": 3,
+    "generatorPartsId": 4,
+    "primaryWeaponId": 0,
+    "secondaryWeaponId": 2
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PartsListManager : MonoBehaviour
@@ -11,13 +12,19 @@ public class PartsListManager : MonoBehaviour
     [SerializeField] private Text partsName;
     [SerializeField] private Text partsSpec;
     [SerializeField] private Text categoryText;
+    [SerializeField] private Text savedText;
     private PartsDataMaster _master;
+    private AssembleManager _assembleManager;
     private int _currentCategory;
+    private int _selectedPartsId;
     
     void Start()
     {
         _master = PartsDataMaster.GetInstance();
+        _assembleManager = AssembleManager.GetInstance();
+        savedText.enabled = false;
         CreateList(0);
+        PartsButtonOnClick(0);
     }
 
     void Update()
@@ -46,9 +53,22 @@ public class PartsListManager : MonoBehaviour
         
         partsName.text = $"{data.PartsName}";
         partsSpec.text = $"Category : {partsCategory}\n" +
-                         $"NoneArmorPoint : {data.ArmorPoint}\n" +
+                         $"ArmorPoint : {data.ArmorPoint}\n" +
                          $"Energy : {data.EnergyProduction}\n" +
                          $"MovementVelocity : {data.MovementVelocity}";
+
+        _selectedPartsId = id;
+    }
+
+    public void RequireButtonOnClick()
+    {
+        _assembleManager.UpdateAssemble(_currentCategory, _selectedPartsId);
+        StartCoroutine(ShowSavedText());
+    }
+
+    public void ExitButtonOnClick()
+    {
+        SceneManager.LoadScene("CentralMenu");
     }
 
     private void CreateList(int category)
@@ -107,5 +127,20 @@ public class PartsListManager : MonoBehaviour
         }
 
         return partsCategory;
+    }
+
+    IEnumerator ShowSavedText()
+    {
+        savedText.enabled = true;
+        var count = 120;
+        var textColor = Color.black;
+        for (int i = 0; i < count; i++)
+        {
+            textColor.a -= 0.008f;
+            savedText.color = textColor;
+            yield return null;
+        }
+
+        savedText.enabled = false;
     }
 }

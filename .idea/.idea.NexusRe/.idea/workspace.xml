@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="39268522-163f-40f8-87a1-7bbc6b36d128" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusRe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PartsButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PartsButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataResources/AssembleTemplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DataResources/AssembleTemplate.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Custumize.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Custumize.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/PartsDataMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/PartsDataMaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PartsButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PartsButtonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PartsListManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PartsListManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Agent/StateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AC/PartsDataMaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,7 +59,6 @@
         <option value="$PROJECT_DIR$/Assets/DataResources/AssembleTemplate.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/PartsData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/AcManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
@@ -74,8 +73,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AC/PartsDataMaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PartsButtonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PartsListManager.cs" />
         <option value="$PROJECT_DIR$/Assets/DataResources/PartsData/TestPartsMaster.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AC/AssembleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PartsListManager.cs" />
       </list>
     </option>
   </component>

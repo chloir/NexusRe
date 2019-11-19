@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class AssembleManager : MonoBehaviour
@@ -35,6 +36,38 @@ public class AssembleManager : MonoBehaviour
 
         _movementVelocity = _partsMaster[_assembleData.legPartsId].MovementVelocity;
     }
+
+    public void UpdateAssemble(int category, int partsid)
+    {
+        switch (category)
+        {
+            case 0:
+                _assembleData.headPartsId = partsid;
+                break;
+            case 1:
+                _assembleData.bodyPartsId = partsid;
+                break;
+            case 2:
+                _assembleData.armPartsId = partsid;
+                break;
+            case 3:
+                _assembleData.legPartsId = partsid;
+                break;
+            case 4:
+                _assembleData.generatorPartsId = partsid;
+                break;
+            default:
+                Debug.Log("カテゴリーが存在しません");
+                break;
+        }
+
+        var json = JsonUtility.ToJson(_assembleData, true);
+        var filepath = Application.dataPath + "/DataResources/AssembleTemplate.json";
+        var sw = new StreamWriter(filepath, false);
+        sw.WriteLine(json);
+        sw.Flush();
+        sw.Close();
+    }
     
     public int GetAssembledArmorPoint() => _armorPoint;
 
@@ -42,6 +75,8 @@ public class AssembleManager : MonoBehaviour
 
     public (int primary, int secondary) GetWeaponId() =>
         (_assembleData.primaryWeaponId, _assembleData.secondaryWeaponId);
+
+    public AssembleData GetAssemble() => _assembleData;
 
     public static AssembleManager GetInstance() => _instance;
 }

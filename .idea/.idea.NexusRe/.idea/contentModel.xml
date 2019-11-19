@@ -24,6 +24,7 @@
             <e p="CacheTest.cs" t="Include" />
           </e>
           <e p="MainCameraManager.cs" t="Include" />
+          <e p="MainMenuManager.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerEffectManager.cs" t="Include" />
             <e p="PlayerInfoManager.cs" t="Include" />
