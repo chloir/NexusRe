@@ -2,13 +2,12 @@
 
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] private GameObject aimTarget;
+    [SerializeField] private GameObject aimTarget = null;
     
     private float _movementVelocity;
     private float _rotationSensitivity = 2f;
     private float _jumpVelocity = 0.5f;
     private float _boostVelocity = 1f;
-    private float _quickBoostVelocity = 4f;
 
     private AcManager _playerAcManager;
     private AssembleManager _assembleManager;

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AcManager : MonoBehaviour
 {
-    [SerializeField] private int testArmorPoint;
+    [SerializeField] private int testArmorPoint = 0;
     private int _armorPoint;
 
     private void Awake()

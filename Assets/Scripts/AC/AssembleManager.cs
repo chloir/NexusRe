@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class AssembleManager : MonoBehaviour
 {
-    [SerializeField] private TextAsset assembleJson;
-    [SerializeField] private TextAsset partsMasterJson;
+    [SerializeField] private TextAsset assembleJson = null;
+    [SerializeField] private TextAsset partsMasterJson = null;
     private AssembleData _assembleData;
     private Dictionary<int, PartsData> _partsMaster = new Dictionary<int, PartsData>();
 

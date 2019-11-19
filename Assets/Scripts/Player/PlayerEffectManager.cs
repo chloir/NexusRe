@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerEffectManager : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem pSystem;
+    [SerializeField] private ParticleSystem pSystem = null;
     private ParticleSystem.ShapeModule _shape;
     private Vector3 _defaultShapeRotation;
     private Vector3 _rotationDiff;

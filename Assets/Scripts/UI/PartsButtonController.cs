@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PartsButtonController : MonoBehaviour
 {
-    [SerializeField] private Text partsName;
+    [SerializeField] private Text partsName = null;
     private PartsDataMaster _master;
     private PartsListManager _listManager;
     private int _selfId;

@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
 public class PartsListManager : MonoBehaviour
 {
-    [SerializeField] private GameObject content;
-    [SerializeField] private GameObject buttonPrefab;
-    [SerializeField] private Text partsName;
-    [SerializeField] private Text partsSpec;
-    [SerializeField] private Text categoryText;
-    [SerializeField] private Text savedText;
+    [SerializeField] private GameObject content = null;
+    [SerializeField] private GameObject buttonPrefab = null;
+    [SerializeField] private Text partsName = null;
+    [SerializeField] private Text partsSpec = null;
+    [SerializeField] private Text categoryText = null;
+    [SerializeField] private Text savedText = null;
     private PartsDataMaster _master;
     private AssembleManager _assembleManager;
     private int _currentCategory;

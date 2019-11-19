@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PartsDataMaster : MonoBehaviour
 {
-    [SerializeField] private TextAsset partsMasterJson;
+    [SerializeField] private TextAsset partsMasterJson = null;
     private Dictionary<int, PartsData> _partsDataDictionary = new Dictionary<int, PartsData>();
     private static PartsDataMaster _instance;
     

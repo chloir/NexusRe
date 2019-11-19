@@ -8,12 +8,12 @@ using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
-    [SerializeField] private Text armorPointText;
-    [SerializeField] private Text currentWeaponDisplay;
-    [SerializeField] private Image barriarGauge;
-    [SerializeField] private Image reticle;
-    [SerializeField] private Image ammoGauge;
-    [SerializeField] private Image intervalGauge;
+    [SerializeField] private Text armorPointText = null;
+    [SerializeField] private Text currentWeaponDisplay = null;
+    [SerializeField] private Image barriarGauge = null;
+    [SerializeField] private Image reticle = null;
+    [SerializeField] private Image ammoGauge = null;
+    [SerializeField] private Image intervalGauge = null;
 
     private Camera _mainCamera;
     

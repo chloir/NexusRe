@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    [SerializeField] private int enemyWeaponId;
-    [SerializeField] private GameObject destroyEffect;
+    [SerializeField] private int enemyWeaponId = 0;
+    [SerializeField] private GameObject destroyEffect = null;
     private WeaponManager _weaponManager;
     private StateManager _stateManager;
     private EnemyIdle _enemyIdle;
