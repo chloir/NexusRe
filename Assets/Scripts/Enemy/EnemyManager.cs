@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] private int enemyWeaponId = 0;
-    [SerializeField] private GameObject destroyEffect = null;
     private WeaponManager _weaponManager;
     private StateManager _stateManager;
     private EnemyIdle _enemyIdle;
@@ -22,11 +21,6 @@ public class EnemyManager : MonoBehaviour
     {
         _weaponManager = WeaponManager.GetInstance();
         _enemyWeapon = new Weapon(_weaponManager.GetWeaponData(enemyWeaponId), transform);
-    }
-
-    private void OnDestroy()
-    {
-        Instantiate(destroyEffect, transform.position, Quaternion.identity);
     }
 
     public Weapon GetWeapon() => _enemyWeapon;

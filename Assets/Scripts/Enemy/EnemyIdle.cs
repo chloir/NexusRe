@@ -12,8 +12,6 @@ public class EnemyIdle : MonoBehaviour, State
     private NavMeshAgent _agent;
     private Weapon _weapon;
 
-    public Text ammoDebug;
-
     public void OnStateEnter()
     {
         _player = GameObject.FindWithTag("Player");
@@ -47,8 +45,6 @@ public class EnemyIdle : MonoBehaviour, State
         }
 
         _agent.SetDestination(_targetPosition);
-
-        ammoDebug.text = $"EnemyAmmo : {_weapon.CurrentAmmo}";
     }
 
     public void OnStateExit()

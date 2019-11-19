@@ -21,6 +21,7 @@ public class UiManager : MonoBehaviour
     private string _currentWeaponName;
     private Vector2 _ammoGaugeRatio = Vector2.one;
     private Vector2 _intervalGaugeRatio = Vector2.one;
+    private Vector2 _barrierGaugeRatio = Vector2.one;
 
     private Transform _playerTransform;
 
@@ -59,6 +60,12 @@ public class UiManager : MonoBehaviour
     {
         _intervalGaugeRatio.x = scale;
         intervalGauge.transform.localScale = _intervalGaugeRatio;
+    }
+
+    public void UpdateBarrierGauge(float scale)
+    {
+        _barrierGaugeRatio.x = scale;
+        barriarGauge.transform.localScale = _barrierGaugeRatio;
     }
 
     public void SetWeaponName(string weaponName)

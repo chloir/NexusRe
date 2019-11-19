@@ -4951,6 +4951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testArmorPoint: 0
+  destroyEffect: {fileID: 8399656977200424802, guid: 1ca67def78daa554ab8a1fc9bbd783ca,
+    type: 3}
 --- !u!114 &8616626151059754065
 MonoBehaviour:
   m_ObjectHideFlags: 0
