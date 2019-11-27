@@ -19,8 +19,29 @@ public class AssembleManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+
+        #region testData
         
-        _assembleData = JsonUtility.FromJson<AssembleData>(assembleJson.text);
+        var streamWriter = new StreamWriter(Application.persistentDataPath + "/UserAssembleData.json");
+        streamWriter.Write(assembleJson.text);
+        streamWriter.Flush();
+        streamWriter.Close();
+
+        #endregion
+        
+        var streamReader = new StreamReader(Application.persistentDataPath + "/UserAssembleData.json");
+
+        string userdata = null;
+        string temp = null;
+
+        while ((temp = streamReader.ReadLine()) != null)
+        {
+            userdata += temp;
+        }
+        
+        streamReader.Close();
+        
+        _assembleData = JsonUtility.FromJson<AssembleData>(userdata);
 
         PartsDataArray partsarr = JsonUtility.FromJson<PartsDataArray>(partsMasterJson.text);
         for (int i = 0; i < partsarr.PartsDataList.Length; i++)
@@ -62,7 +83,7 @@ public class AssembleManager : MonoBehaviour
         }
 
         var json = JsonUtility.ToJson(_assembleData, true);
-        var filepath = Application.dataPath + "/DataResources/AssembleTemplate.json";
+        var filepath = Application.dataPath + "/UserAssembleData.json";
         var sw = new StreamWriter(filepath, false);
         sw.WriteLine(json);
         sw.Flush();
